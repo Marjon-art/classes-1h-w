@@ -4,9 +4,8 @@ export class Character {
             throw new Error("некорректные значения");
          }
         let array = ["Bowman", "Swordsman", "Magician", "Daemon", "Undead", "Zombie"];
-          if(!array.inclubes("string")) {
+          if(!array.includes(type)) {
             throw new Error("некорректные значения типа");
-  
         }
       this.health = 100;
       this.level = 1;
@@ -14,10 +13,11 @@ export class Character {
       this.attack = undefined;
       this.defence =undefined;
 
-      this.name =name;
-      this.type =type;
+      this.name = name;
+      this.type = type;
     }
 }
+
 
 
 
