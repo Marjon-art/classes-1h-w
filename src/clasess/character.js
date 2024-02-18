@@ -1,5 +1,5 @@
-export class Character {
-    constructor(name, type,) {
+export default class Character {
+    constructor(name, type) {
         if(name.length < 2 || typeof name !== "string" || name.length > 10) {
             throw new Error("некорректные значения");
          }
