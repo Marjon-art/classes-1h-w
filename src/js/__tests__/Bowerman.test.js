@@ -1,14 +1,16 @@
 import Bowerman from "../Bowerman.js";
 
 test("Правильно создается обьект", () => {
-    const bowerman = new Bowerman("Gold", "Bowman")
-    const result = {
+    const bowerman = new Bowerman("Bowman");
+    const correct = {
         attack: 25,
         defence: 25,
         health: 100,
         level: 1,
-        name: "Gold",
+        name: "Bowman",
         type: "Bowman",
     };
-    expect(bowerman).toEqual(result);
+    expect(bowerman).toEqual(correct);
 })
+
+
