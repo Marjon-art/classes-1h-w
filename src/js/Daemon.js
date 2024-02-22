@@ -5,6 +5,5 @@ export default class Daemon extends Character {
 super(name, type)
 this.attack = 10;
 this.defence = 40;
-this.type = "Daemon";
     }
 }
