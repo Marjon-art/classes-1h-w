@@ -1,5 +1,4 @@
 import Character from "../Character.js";
-import Bowerman from "./Bowerman.js";
 
 test("Ошибка в name", () => {
     expect(() => new Character("A", "Bowman")).toThrow(new Error("Имя должно содержать от 2 до 10 символа"));
