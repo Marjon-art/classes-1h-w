@@ -5,7 +5,7 @@ test("Ошибка в name", () => {
 });
 
 test("Ошибка в type", () => {
-    expect(() => new Character("Alex", "Bow")).toThrow(new Error("Неизвестное сушность"));
+    expect(() => new Character("Alex", "Bow")).toThrow(new Error("некорректные значения типа"));
 });
 
 test("Правильно создается обьект", () => {

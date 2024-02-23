@@ -1,7 +1,7 @@
 export default class Character {
     constructor(name, type) {
         if(name.length < 2 || typeof name !== "string" || name.length > 10) {
-            throw new Error("некорректные значения");
+            throw new Error("Имя должно содержать от 2 до 10 символа");
          }
         let array = ["Bowman", "Swordsman", "Magician", "Daemon", "Undead", "Zombie"];
           if(!array.includes(type)) {
